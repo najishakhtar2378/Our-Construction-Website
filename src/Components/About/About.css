@@ -1,0 +1,334 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+  color: #444;
+  background: #fdfdfd;
+}
+
+/* Section Heading */
+.aboutus-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.aboutus-heading h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+.aboutus-heading h2::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: #ff5457;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* About Section */
+.aboutus-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 120px;
+  gap: 40px;
+  padding: 140px 120px 20px 120px;
+}
+.aboutus-section img {
+  flex: 1 1 400px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease;
+  height: 400px;
+  width: 500px;
+  
+}
+.aboutus-section img:hover {
+  transform: scale(1.05);
+}
+.aboutus-content {
+  flex: 1 1 500px;
+}
+.aboutus-content h3 {
+  font-size: 1.8rem;
+  color: #ff5457;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.aboutus-content p {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Services */
+.aboutus-services {
+  background: #fafafa;
+  padding: 20px 100px 1px 100px;
+}
+.aboutus-service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+  justify-items:auto;
+  padding-left: 70px;
+  padding-right: 40px;
+}
+.aboutus-service-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  color: #fff; /* text default white */
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+}
+.aboutus-service-card i {
+  font-size: 40px;
+  color: #ff5457;
+  margin-bottom: 15px;
+
+}
+.aboutus-service-card i {
+  transition: color 0.3s, transform 0.3s;
+}
+.aboutus-service-card:hover i {
+  color: #d7263d;
+  transform: scale(1.2) rotate(-8deg);
+}
+
+.aboutus-service-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+}
+.aboutus-service-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+.aboutus-service-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.src-btn{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-choose-us {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.highlight {
+  font-weight: 600;
+  color: #d63031;
+}
+
+/* Layout */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.image-box {
+  flex: 1 1 40%;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease;
+}
+
+.image-box img:hover {
+  transform: scale(1.03);
+}
+
+.features {
+  flex: 1 1 45%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.feature-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.icon.blue {
+  color: #007bff;
+}
+
+.icon.red {
+  color: #ff4d4d;
+}
+
+.feature-box h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.feature-box p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* CTA */
+.cta {
+  margin-top: 40px;
+}
+
+.btn {
+  background: #ff4d4d;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background: #e84141;
+  transform: scale(1.05);
+}
+
+/* Animations */
+.fade-in-left {
+  animation: fadeInLeft 1s ease forwards;
+  opacity: 0;
+}
+.fade-in-right {
+  animation: fadeInRight 1s ease forwards;
+  opacity: 0;
+}
+.fade-in-up {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+/* Founder Section */
+.aboutus-founder {
+  padding: 60px 8%;
+  background: linear-gradient(135deg, #fff, #f8f8f8);
+  text-align: center;
+}
+.aboutus-founder h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+.aboutus-founder p {
+  max-width: 1200px;
+  margin: 0 auto 15px;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+  text-justify: inter-word;
+
+}
+.aboutus-signature {
+  margin-top: 25px;
+  font-weight: 600;
+  color: #ff5457;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .aboutus-section, .aboutus-why {
+    flex-direction: column;
+  }
+  .aboutus-content, .aboutus-why-content {
+    text-align: center;
+  }
+  .aboutus-why-content ul {
+    text-align: left;
+    display: inline-block;
+  }
+}

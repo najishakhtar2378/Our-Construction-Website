@@ -1,0 +1,185 @@
+ body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9fafb;
+      color: #1f2937;
+      padding-top: 100px;
+    }
+
+    .project-card {
+      max-width: 1400px;
+      height: 700px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    .project-image card7 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .card{
+        margin: 150px 30px 200px 60px;
+        width: 580px;
+        height: 350px;
+        padding-top: 100px;
+        display: flex;
+        align-items: center;
+        border-radius: 25px;
+    }
+
+    /* .project-image img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: cover;
+        border-radius: 12px;
+        transition: transform 0.4s ease;
+    } */
+
+    .project-card:hover .project-image img {
+      transform: scale(1.05);
+    }
+
+    .project-content {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .project-content h2 {
+      margin: 0 0 12px;
+      font-size: 1.9rem;
+      color: #111827;
+    }
+
+    .project-meta {
+      display: flex;
+      gap: 20px;
+      font-size: 0.95rem;
+      margin-bottom: 18px;
+      color: #6b7280;
+    }
+
+    .project-meta i {
+      margin-right: 6px;
+      color: #f97316; /* orange highlight */
+    }
+
+    .project-content p {
+      margin-bottom: 16px;
+      line-height: 1.6;
+      font-size: 1rem;
+      color: #374151;
+    }
+
+    .services {
+      margin: 18px 0;
+    }
+
+    .services span {
+      display: inline-block;
+      background: #e5e7eb;
+      padding: 8px 14px;
+      margin: 6px 6px 0 0;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: #374151;
+      transition: background 0.3s ease, transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .services span:hover {
+      background: #f97316;
+      color: #fff;
+      transform: translateY(-3px);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #111827;
+      color: #fff;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #f97316;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .project-card {
+        grid-template-columns: 1fr;
+      }
+
+      .project-content {
+        padding: 20px;
+      }
+
+      .project-content h2 {
+        font-size: 1.6rem;
+      }
+    }
+
+    .card7 {
+  background-image: url("../Assets/Moonstone\ Villa.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card8 {
+  background-image: url("../Assets/Tranquil\ Crest.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.card9 {
+  background-image: url("../Assets/Lilyfield\ House.jpg");
+  background-size:cover;
+  background-position: center;
+ background-repeat: no-repeat;
+ 
+}
+.card10 {
+  background-image: url("../Assets/The\ Oakridge\ Enclave.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.card11 {
+  background-image: url("../Assets/Verdant\ Vista.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card12 {
+  background-image: url("../Assets/quantity\ take\ off.png");
+  background-size: cover;
+  background-position: center;
+}

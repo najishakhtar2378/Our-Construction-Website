@@ -1,0 +1,130 @@
+
+
+    .impact-card {
+      max-width: 1200px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 50px;
+      padding: 40px;
+      align-items: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding-top: 30px;
+      
+    }
+
+    .impact-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+    }
+
+    .impact-content h2 {
+      font-size: 1.9rem;
+      margin-bottom: 18px;
+      color: #ef4444; /* red */
+      animation: fadeDown 0.8s ease;
+    }
+
+    .impact-content p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 18px;
+      animation: fadeIn 1s ease;
+    }
+
+    .impact-content ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px;
+    }
+
+    .impact-content li {
+      margin-bottom: 12px;
+      font-size: 1rem;
+      line-height: 1.6;
+      animation: fadeInUp 0.9s ease forwards;
+      opacity: 0;
+    }
+
+    .impact-content li:nth-child(1) { animation-delay: 0.2s; }
+    .impact-content li:nth-child(2) { animation-delay: 0.4s; }
+    .impact-content li:nth-child(3) { animation-delay: 0.6s; }
+    .impact-content li:nth-child(4) { animation-delay: 0.8s; }
+    .impact-content li:nth-child(5) { animation-delay: 1s; }
+    .impact-content li:nth-child(6) { animation-delay: 1.2s; }
+    .impact-content li:nth-child(7) { animation-delay: 1.4s; }
+
+    .quote {
+      background: #f9fafb;
+      border-left: 4px solid #ef4444;
+      padding: 14px 18px;
+      border-radius: 6px;
+      font-style: italic;
+      font-size: 0.95rem;
+      animation: fadeUp 1.2s ease;
+    }
+
+    .impact-image1{
+      width: 500px;
+      height: 350px;
+      border-radius: 10px;
+      transition: transform 0.4s ease;
+      background-image: url("../Assets/The\ Impact\ of\ 3D\ Modeling.png");
+    }
+        .impact-image2{
+      width: 500px;
+      height: 350px;
+      border-radius: 10px;
+      transition: transform 0.4s ease;
+      background-image: url("../Assets/Cost\ and\ Time\ Savings.png");
+      background-size: cover;
+  background-position: center;
+    }
+        .impact-image3{
+      width: 500px;
+      height: 350px;
+      border-radius: 10px;
+      transition: transform 0.4s ease;
+      background-image: url("../Assets/Interior\ design.png");
+    }
+    
+
+    .impact-card:hover .impact-image img {
+      transform: scale(1.05);
+    }
+
+    /* Animations */
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .impact-card {
+        grid-template-columns: 1fr;
+        padding: 20px;
+      }
+
+      .impact-content h2 {
+        font-size: 1.5rem;
+      }
+    }

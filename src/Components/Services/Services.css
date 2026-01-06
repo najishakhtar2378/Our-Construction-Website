@@ -1,0 +1,158 @@
+
+body {
+  background: #fff;
+  color: #1d2939;
+  line-height: 1.6;
+  padding: 40px;
+}
+
+.service-section1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.service-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+
+.service-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.service-image  {
+  width: 550px;
+  height: 350px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.service-image img:hover {
+  transform: scale(1.03);
+}
+
+.service-content {
+  flex: 1;
+}
+
+.service-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.service-content p {
+  font-size: 16px;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.service-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.offers {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 24px;
+}
+
+.offers ul {
+  list-style: none;
+}
+
+.offers li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 24px;
+  font-size: 15px;
+}
+
+.offers li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #ef4444;
+  font-weight: bold;
+}
+
+.benefits-box {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.benefits-box strong {
+  color: #ef4444;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ef4444;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  
+}
+
+.btn:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+}
+
+
+.card1 {
+  background-image: url("../Assets/BimModeling.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.card2 {
+  background-image: url("../Assets/construction.png");
+  background-size: cover;
+  background-position: center;
+}
+.card3 {
+  background-image: url("../Assets/scan\ to\ BIM.jpg");
+  background-size:cover;
+  background-position: center;
+ background-repeat: no-repeat;
+ 
+}
+.card4 {
+  background-image: url("../Assets/Rnders.png");
+  background-size: cover;
+  background-position: center;
+}
+.card5 {
+  background-image: url("../Assets/Interior\ design.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.card6{
+  background-image: url("../Assets/quantity\ take\ off.png");
+  background-size: cover;
+  background-position: center;
+}
+
